@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.content{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+/*################### nav ######################*/
+.nav{
+    padding: 1rem;
+   
+    background-color: #263238;
+    color: white;
+    display: flex;
+}
+.nav div{
+    width: 25%;
+}
+.nav a img{
+    object-fit: cover;
+    height:80px;
+    width: 130px;
+}
+
+.div2,.div3{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.div1{
+    text-align: left;
+}
+.div4{
+    text-align: right;
+}
+.lang{
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    border: 1px solid lightgray;
+}
+.lang1{
+   
+    float: left;
+}
+.lang1 a{
+    background-color: dimgray;
+    color: white;
+}
+.lang2{
+    float: right;
+    font-size: 1.4rem;
+}
+.lang::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.lang a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0rem 0.5rem 7rem;
+    padding: 0.5rem 2rem;
+}
+.lang input{
+    margin: 0.5rem 0rem 0.5rem 7rem;
+    padding: 0.5rem 2rem;
+}
+.lang1 a:hover{
+    background-color: blue;
+}
+.lang label{
+    display: inline-block;
+    margin-left: 60%;
+}
+.lang select{
+    margin: 0.5rem 5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: dimgrey;
+}
+
+.note{
+    font-size: 2rem;
+    color: brown;
+    margin: 1.6rem 0rem 1.6rem 12rem;
+}
+span{
+    color: red;
+}
+/*####################### section ###################*/
+.section{
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 2rem;
+   font-size: 1.2rem; 
+    line-height: 2rem;
+    background-color:whitesmoke;
+    
+}
+.type{
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: 0.3rem;
+}
+.app{
+    padding: 1rem;
+    background-color: lightsalmon;
+    border-radius: 0.3rem;
+    
+    color: #263238cb;
+    margin-bottom: 4rem;
+}
+.section p{
+    margin-bottom: 1rem;
+}
+.content1{
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+}
+.content1 div{
+    
+    margin: 1.5rem;
+}
+.speci input{
+    margin: 1rem;
+}
+
+select{
+    background-color: #263238;
+    color: white;
+    margin: 0.5rem;
+}
+.st select{
+    margin-right: 5rem;
+}
+
+.or{
+    font-size: 1.7rem;
+   margin-top: 1rem;
+}
+.up{
+    display: flex;
+}
+.up a {
+ margin: 0 auto;
+ text-decoration: none;
+ color:blueviolet;
+}
+.up a:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+.dec{
+    margin: 2rem 0;
+}
+.rad{
+    margin-left: 10%;
+}
+.orr{
+    margin: 2% 10%;
+    font-size: 1.7rem;
+    
+}
+.end{
+    margin-bottom: 5rem;
+}
+.footer{
+    background-color: #263238;
+    padding: 3rem;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+#speci{
+    display: flex;
+}
+#speci p{
+    margin: 1rem;
+}
+i{
+    margin: 1.5rem;
+}
+.btns{
+   
+    text-align: center;
+}
+.btns a{
+    padding:0.5rem 1.2rem;
+    border-radius: 1rem;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*############# media queries ###################*/
+
+@media (max-width:600px){
+    .div2,.div3{
+        font-size: 8px;
+    }
+    .nav a img{
+        height: 35px;
+        width: 42px;
+    }
+    .content{
+        font-size: 8px;
+    }
+  
+    
+    .lang1 a{
+        margin: 2px auto;
+    }
+    .lang2 select{
+        margin: 1px auto;
+    }
+    .note{
+        margin: 10px;
+    }
+    .btns input{
+        padding-left: 2px;
+    }
+    #speci input{
+        display: block;
+    }
+    .content1{
+        max-width: 1100px;
+        width: 95%;
+        margin: 0 auto;
+    }
+   
+}
+@media (max-width:350px){
+    .lang .lang1,
+    .lang .lang2{
+     float: none;
+     text-align: center;
+    }
+}
